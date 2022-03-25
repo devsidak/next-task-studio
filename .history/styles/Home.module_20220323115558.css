@@ -1,0 +1,35 @@
+.root{
+  display: flex;
+  color: #fff;
+}
+
+.root{
+  height: 100vh;
+
+}
+
+.root div{
+  /* border: 1px solid #ccc; */
+}
+
+.leftsidebar{
+  flex: 1;
+  /* border: 1px solid #ccc; */
+
+}
+
+.centerbar{
+  flex: 3;
+  /* border: 1px solid gray; */
+
+}
+
+.rightsidebar{
+  flex: 1;
+  /* border: 1px solid #ccc; */
+
+}
+
+@media screen and (min{
+  
+}

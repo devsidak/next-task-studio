@@ -1,0 +1,12 @@
+.container{
+    border-radius: 16px;
+
+}
+
+
+.profileContainer{
+    display:flex;
+    flex-direction: column;
+}
+
+.profileContainer{

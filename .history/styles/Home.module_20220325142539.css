@@ -1,0 +1,71 @@
+.root{
+  display: flex;
+  color: #fff;
+  maxheight
+}
+
+.root{
+  height: 100vh;
+  margin : 8px;
+
+}
+
+.root div{
+  /* border: 1px solid #ccc; */
+}
+
+.leftsidebar{
+  flex: 1;
+  /* border: 1px solid #ccc; */
+
+}
+
+.centerbar{
+  flex: 3;
+  /* border: 1px solid gray; */
+
+}
+
+.rightsidebar{
+  flex: 1;
+  background-color: #2e384e;
+  
+  /* border: 1px solid #ccc; */
+
+}
+
+@media screen and (max-width: 1023px){
+  .leftsidebar{
+    flex: 1;
+    /* border: 1px solid #ccc; */
+  
+  }
+  
+  .centerbar{
+    flex: 3;
+    /* border: 1px solid gray; */
+  
+  }
+
+  .rightsidebar{
+    display: none;
+  }
+}
+  
+@media screen and (min-width: 1024px){
+  .leftsidebar{
+    flex: 1;
+    /* border: 1px solid #ccc; */
+  
+  }
+  
+  .centerbar{
+    flex: 3;
+    /* border: 1px solid gray; */
+  
+  }
+
+  .rightsidebar{
+    flex: 1;
+  }
+}

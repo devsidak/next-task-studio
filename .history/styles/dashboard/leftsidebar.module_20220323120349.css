@@ -1,0 +1,23 @@
+.container{
+    padding : 10px 40px;
+    border: 2px solid #ccc;
+    color: #000;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 10px 0px;
+}
+
+.logoContainer{
+
+}
+
+.listContainer{
+
+}
+
+
+.listContainer div{
+    padding: 20px 0px;
+    display: flex;
+
+}

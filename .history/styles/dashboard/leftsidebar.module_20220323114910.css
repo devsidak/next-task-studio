@@ -1,0 +1,19 @@
+.container{
+    padding : 10px;
+    border: 2px solid #ccc;
+}
+
+.logoContainer{
+
+}
+
+.listContainer{
+
+}
+
+
+.listContainer div{
+    padding: 20px 0px;
+    display: flex;
+
+}

@@ -1,0 +1,19 @@
+{
+    "posts" : [
+        
+        {
+            "title" : "First Post",
+            "author" : "John Doe",
+            "body" : "This is the first post's body"
+        },
+        {
+            "title" : "Second Post",
+            "author" : "Jane Doe",
+            "body" : "This is the second post's body"
+        }
+    ],
+
+    
+    "name" : {"name" : "gursidak"}
+     
+}

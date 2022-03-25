@@ -1,0 +1,9 @@
+.container{
+    border-radius: 16px;
+
+}
+
+
+.profileContainer{
+    display:flex;
+}
