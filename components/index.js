@@ -7,11 +7,11 @@ import styles from '../styles/Home.module.css';
 
 function Index({children}) {
   return (
-    <div className={styles.root + ' p-5 overflow-hidden'}>
+    <div className={styles.root + ' pt-3 md:p-5 '}>
       <div className={styles.leftsidebar + ' hidden md:flex'}>
           <Leftbar />
           </div>
-      <div className={styles.centerbar + ' py-2 px-6 max-h-full'}> 
+      <div className={styles.centerbar + ' md:py-2 md:px-6 max-h-full'}> 
             {children}
       </div>
       <div className={styles.rightsidebar + ' hidden lg:flex rounded-3xl' }>

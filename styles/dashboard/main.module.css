@@ -25,11 +25,11 @@
 /* -------- SecondRow Styles -------- */
 
 .secondRowContainer{
-    display:flex;
+    /* display:flex;
     justify-content:space-between;
     align-items:center;
     padding:42px 20px;
-    align-items:center;
+    align-items:center; */
 }
 
 .secondRowContainer div{
@@ -59,8 +59,8 @@
 
 /* Fourth Row */
 
+
 .taskContainer{
-    /* max-height:630px !important; */
     height:570px;
     overflow-y: auto !important; 
 }

@@ -4,17 +4,22 @@ import FourthRow from "../../tasks";
 import SecondRow from "./components/SecondRow";
 import ThirdRow from "./components/ThirdRow";
 
-
 function Centerbar() {
   return (
     <div className={styles.centerbar}>
-        <FirstRow />
-        <SecondRow />
-        {/* <ThirdRow /> */}
-        <div className={styles.taskContainer + ' p-2 m-4 min-h-full  align-middle flex-center text-center border-2 border-gray-700 rounded-3xl'}>
+      <FirstRow />
+      <SecondRow />
+      {/* <ThirdRow /> */}
+      <div
+        className={styles.Fourthcontainer +
+          " p-2 m-4 min-h-full  align-middle flex-center text-center border-2 border-gray-700 rounded-3xl"
+        }
+      >
+        <h1 className="text-left py-5 px-5 text-2xl">Tasks</h1>
+        <div className={styles.taskContainer}>
         <FourthRow />
         </div>
-  
+      </div>
     </div>
   );
 }

@@ -21,7 +21,7 @@ function FirstRow() {
   return (
     <div className={styles.FirstRowContainer}>
       <div>
-        <h2 className={"text-3xl md:text-4xl"}>{handleGreeting()}</h2>
+        <h2 className={"text-xl md:text-4xl"}>{handleGreeting()}</h2>
       </div>
 
       <div>
@@ -29,7 +29,7 @@ function FirstRow() {
           onClick={() => {
             router.push("/add");
           }}
-          className={styles.Button + " py-1 px-3 border-0 rounded-lg text-md "}
+          className={styles.Button + " py-1 px-2 md:py-2 md:px-4 border-0 rounded-lg text-md "}
         >
           + Add Task
         </button>

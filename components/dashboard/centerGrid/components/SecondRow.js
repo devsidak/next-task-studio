@@ -22,8 +22,8 @@ function SecondRow() {
   // const uncompletedPrecentage = 100 - completedPrecentage;
 
   return (
-    <div className={styles.secondRowContainer + " "}>
-      <div className={"mr-3 p-5 rounded-xl"}>
+    <div className={styles.secondRowContainer + "  flex m-2 flex-col md:flex-row justify-between p-1  "}>
+      <div className={"m-2 md:m-0 md:mr-3 p-5 rounded-xl"}>
         <div className={styles.contentBox + " text-center"}>
           <h1 className={"text-xl md:text-2xl"}>
             {completedTasks} Tasks
@@ -47,9 +47,9 @@ function SecondRow() {
         </div>
       </div>
 
-      <div className={" ml-3 p-5 rounded-xl"}>
+      <div className={"m-2 mt-6 md:m-0 md:ml-3 p-5 rounded-xl"}>
         <div className={styles.contentBox + " text-center"}>
-          <h1 className={"text-xl md:text-2xl"}>
+          <h1 className={"text-lg md:text-2xl"}>
             {tasks.length - completedTasks} Tasks
           </h1>
           <h3 className={"text-md md:text-lg text-gray-500 py-1"}>Pending</h3>

@@ -10,18 +10,16 @@
 }
 
 .root div{
-  /* border: 1px solid #ccc; */
+  
 }
 
 .leftsidebar{
   flex: 1;
-  /* border: 1px solid #ccc; */
 
 }
 
 .centerbar{
   flex: 3;
-  /* border: 1px solid gray; */
 
 }
 
@@ -29,7 +27,6 @@
   flex: 1;
   background-color: #2e384e;
   
-  /* border: 1px solid #ccc; */
 
 }
 
