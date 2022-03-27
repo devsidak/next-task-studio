@@ -7,7 +7,7 @@ function FirstRow() {
   const handleGreeting = () => {
     var today = new Date();
     var curHr = today.getHours()
-    if (curHr < 12) {
+    if (curHr < 12 && curHr >= 6) {
       return "Good Morning 🌞";
     } else if (curHr < 17) {
       return "Good Afternoon ☀️";
