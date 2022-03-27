@@ -28,7 +28,7 @@ function Add() {
         <h1 className="text-center text-2xl text-slate-300 mb-5">Add Tasks {" "} <AddTaskIcon className="text-yellow-500"/> </h1>
         <form className={styles.Form + ' px-4 lg:px-9'} onSubmit={handleSubmit}>
           <input type="text" className={' w-full'} ref={inputRef} placeholder="Add a Task ..." /> <br/>
-          <button className={homeStyles.Button + ' self-center mt-6'} type="submit">
+          <button className={homeStyles.Button + ' self-center mt-6 py-2 px-4 rounded-xl'} type="submit">
             Add Task
           </button>
         </form>
