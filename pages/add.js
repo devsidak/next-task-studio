@@ -6,17 +6,20 @@ import { useSelector, useDispatch } from "react-redux";
 import Link from "next/link";
 import Container from "../components/index";
 import AddTaskIcon from '@mui/icons-material/AddTask';
+import {useRouter} from 'next/router'
 
 function Add() {
   const inputRef = useRef(null);
   const state = useSelector((state) => state);
   const dispatch = useDispatch();
+  const router = useRouter();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("submit - ", inputRef.current.value);
     dispatch(addTodo(inputRef.current.value));
     e.target.reset();
+    router.push("/");
   };
 
   return (
