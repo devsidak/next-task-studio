@@ -11,7 +11,7 @@ function Index({children}) {
       <div className={styles.leftsidebar + ' hidden md:flex'}>
           <Leftbar />
           </div>
-      <div className={styles.centerbar + ' py-2 px-2 max-h-full'}> 
+      <div className={styles.centerbar + ' py-2 px-6 max-h-full'}> 
             {children}
       </div>
       <div className={styles.rightsidebar + ' hidden lg:flex rounded-3xl' }>

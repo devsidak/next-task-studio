@@ -21,9 +21,9 @@ function Add() {
 
   return (
     <Container>
-      <div className={"w-full border-2 shadow shadow-gray-700 border-gray-700 rounded-3xl p-6   "}>
+      <div className={"w-full border-2 shadow shadow-gray-700 border-gray-700 rounded-3xl p-9   "}>
         <h1 className="text-center text-2xl text-slate-300 mb-5">Add Tasks {" "} <AddTaskIcon className="text-yellow-500"/> </h1>
-        <form className={styles.Form} onSubmit={handleSubmit}>
+        <form className={styles.Form + ' px-4 lg:px-9'} onSubmit={handleSubmit}>
           <input type="text" className={' w-full'} ref={inputRef} placeholder="Add a Task ..." /> <br/>
           <button className={homeStyles.Button + ' self-center mt-6'} type="submit">
             Add Task
