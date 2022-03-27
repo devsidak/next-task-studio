@@ -9,9 +9,9 @@ function FirstRow() {
     var curHr = today.getHours()
     if (curHr < 12 && curHr >= 6) {
       return "Good Morning 🌞";
-    } else if (curHr < 17) {
+    } else if (curHr < 17 && curHr >= 12) {
       return "Good Afternoon ☀️";
-    } else if (curHr < 20) {
+    } else if (curHr < 20 && curHr >= 17) {
       return "Good Evening 🌤";
     }
     else{
