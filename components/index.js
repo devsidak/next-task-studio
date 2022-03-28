@@ -8,7 +8,7 @@ import DashboardIcon from "@mui/icons-material/Dashboard";
 function Index({ children }) {
 
   return (
-    <div className={styles.root + " pt-3 md:p-5 "}>
+    <div className={styles.root + " pt-3 md:p-5 max-h-screen "}>
       <div className={styles.leftsidebar + " hidden md:flex"}>
         <Leftbar />
       </div>
@@ -18,8 +18,7 @@ function Index({ children }) {
       <div className={styles.rightsidebar + " hidden lg:flex rounded-3xl"}>
         <Rightbar />
       </div>
-
-    </div>
+      </div>
   );
 }
 

@@ -6,7 +6,7 @@ import ThirdRow from "./components/ThirdRow";
 
 function Centerbar() {
   return (
-    <div className={styles.centerbar}>
+    <div className={styles.centerbar + ' flex-col max-h-screen space-y-7 '}>
       <FirstRow />
       <SecondRow />
       {/* <ThirdRow /> */}
