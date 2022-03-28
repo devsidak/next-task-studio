@@ -32,14 +32,14 @@ function SecondRow() {
         }
       >
         <div
-          className={"h-full max-w-fit flex-col justify-center  text-center"}
+          className={"h-full max-w-fit flex-col justify-center text-center"}
         >
           <div
             className={
-              "border max-w-fit m-2  p-3 rounded-xl border-yellow-500"
+              "border items-center max-w-fit m-2  p-3 rounded-xl border-yellow-500"
             }
           >
-            <TaskIcon className="text-yellow-500" />
+            <TaskIcon className="text-yellow-500 text-3xl" />
           </div>
         </div>
         <div className={styles.contentBox + " text-center"}>
@@ -71,10 +71,10 @@ function SecondRow() {
         <div className={"h-full max-w-fit flex-col justify-center text-center"}>
           <div
             className={
-              "border max-w-fit m-2  p-3 rounded-xl border-yellow-500"
+              "border items-center max-w-fit m-2  p-3 rounded-xl border-yellow-500"
             }
           >
-            <PendingActionsIcon className="text-yellow-500" />
+            <PendingActionsIcon className="text-yellow-500 text-3xl" />
           </div>
         </div>
         <div className={styles.contentBox + " text-center"}>
