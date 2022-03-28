@@ -60,7 +60,7 @@
     justify-content: center;
     margin : 0 auto;
     width :100%;
-    max-width: 100px;
+    max-width: 140px;
 }
 
 /* Fourth Row */
@@ -75,5 +75,10 @@
     .taskContainer{
         max-height:550px;
     }
+    .secondRowContainer .progressbarContainer{
+
+        max-width: 100px;
+    }
+
 }
     

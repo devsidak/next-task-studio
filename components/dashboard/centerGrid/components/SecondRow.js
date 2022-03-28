@@ -19,10 +19,6 @@ function SecondRow() {
     }, 0);
   }, [tasks]);
 
-  // const completedPrecentage =
-  //   (tasks.filter((task) => task.completed).length / tasks.length) * 100;
-  // const uncompletedPrecentage = 100 - completedPrecentage;
-
   return (
     <div
       className={
@@ -40,7 +36,7 @@ function SecondRow() {
         >
           <div
             className={
-              "border max-w-fit max-h-12 p-2 rounded-xl border-yellow-500"
+              "border max-w-fit m-2  p-3 rounded-xl border-yellow-500"
             }
           >
             <TaskIcon className="text-yellow-500" />
@@ -75,7 +71,7 @@ function SecondRow() {
         <div className={"h-full max-w-fit flex-col justify-center text-center"}>
           <div
             className={
-              "border max-w-fit max-h-12 p-2 rounded-xl border-yellow-500"
+              "border max-w-fit m-2  p-3 rounded-xl border-yellow-500"
             }
           >
             <PendingActionsIcon className="text-yellow-500" />

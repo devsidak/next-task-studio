@@ -1,5 +1,3 @@
-import Centerbar from "../components/dashboard/centerGrid/Centerbar";
-import styles from "../styles/Home.module.css";
 import Container from "../components/index";
 import Calendar from "react-calendar";
 import { useState } from "react";

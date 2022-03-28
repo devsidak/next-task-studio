@@ -1,11 +1,8 @@
 import * as typ from "../types";
 import axios from "axios";
-import { db } from "../../firebase";
-import { collection, getDocs } from "firebase/firestore/lite";
 import localforage from "localforage";
 
 export const setInfo = (usrName) => (dispatch) => {
-  debugger;
   dispatch({
     type: typ.SET_NAME,
     payload: {
@@ -19,7 +16,6 @@ export const removeTodo = (id) => (dispatch) => {
   localforage
     .getItem("todos")
     .then(function (tasks) {
-      debugger;
       const newTasks = tasks.filter((task) => task.id !== id);
       localforage
         .setItem("todos", [...newTasks])
@@ -43,13 +39,10 @@ export const removeTodo = (id) => (dispatch) => {
 };
 
 export const updateState = (task) => (dispatch) => {
-  debugger;
-
   //updating the completion status of tasks;
   localforage
     .getItem("todos")
     .then(function (tasks) {
-      debugger;
       const newTasks = tasks.map((t) => {
         if (t.id === task.id) {
           return task;
@@ -78,7 +71,6 @@ export const updateState = (task) => (dispatch) => {
 };
 
 export const addTodo = (task) => (dispatch) => {
-  // debugger;
   var currentDateTime = new Date();
   var resultInSeconds = currentDateTime.getTime();
 

@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   updateState,
@@ -7,21 +7,18 @@ import {
 } from "../../redux/actions/main";
 import Task from "./Task";
 import AssignmentLateIcon from "@mui/icons-material/AssignmentLate";
-import styles from '../../styles/dashboard/main.module.css';
+import styles from "../../styles/dashboard/main.module.css";
 
 function Tasks() {
   const dispatch = useDispatch();
   const tasks = useSelector((state) => state.main.todos);
-  // const tasks = useMemo(() => {
-  //   return [];
-  // }, []);
 
-  console.log("state", tasks);
   const [loading, setLoading] = useState(false);
 
+
+  // Syncing the 
   React.useEffect(() => {
     if (tasks.length === 0) {
-      console.log("syncing in tasks");
       dispatch(SyncFromLocalStorage());
     }
   }, [dispatch, tasks.length]);
@@ -56,7 +53,7 @@ function Tasks() {
 
   const renderNotasksView = () => {
     return (
-      <div className={styles.notasksContainer}>
+      <div className={styles.notasksContainer + " text-center mt-9"}>
         <AssignmentLateIcon className={"text-slate-400 "} />
         <h3 className={"text-center text-xl text-slate-400"}>
           No Tasks For Today

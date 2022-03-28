@@ -68,9 +68,9 @@ function Add() {
           />
         </div>
 
-        <button className={homeStyles.Button + ' md:hidden rounded-md py-1 px-3 text-sm'} onClick={handleBackToHome} >
+        {/* <button className={homeStyles.Button + ' md:hidden rounded-md py-1 px-3 text-sm'} onClick={handleBackToHome} >
           {"<-"} Back to Home
-        </button>
+        </button> */}
       </div>
     </Container>
   );
