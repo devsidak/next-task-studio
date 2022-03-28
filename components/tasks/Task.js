@@ -12,7 +12,7 @@ function Task({task, loading, setLoading, removeTodo, udpateCompletionStatus}) {
             <input disabled={loading} onChange={(e) => udpateCompletionStatus(e, task)} checked={task.completed} className={styles.checkbox} type="checkbox" />
         </div>
         <div>
-            <p>{task.task}</p>
+            <p className={task.completed === true && 'line-through'}>{task.task}</p>
         </div>
         <div className={styles.taskButtonBox }>
             <button disabled={loading} onClick={()=>{removeTodo(task.id)}}><DeleteIcon /></button>

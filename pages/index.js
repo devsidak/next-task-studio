@@ -8,11 +8,12 @@ import { SyncFromLocalStorage } from "../redux/actions/main";
 
 function Index() {
   const dispatch = useDispatch();
-  useEffect(() => {
-    document.title = "Home";
-    dispatch(SyncFromLocalStorage());
+  // useEffect(() => {
+  //   document.title = "Home";
 
-  }, [dispatch]);
+  //   dispatch(SyncFromLocalStorage());
+
+  // }, [dispatch]);
 
   return (
     <Container>

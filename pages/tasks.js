@@ -8,12 +8,7 @@ function Tasks() {
     <Container>
       <div>
         <TaskList />
-        <Link href="/add">
-          <a className={homeStyles.Button}>Add Task</a>
-        </Link>
-        <Link href="/">
-          <a className={homeStyles.Button}>Home</a>
-        </Link>
+
       </div>
     </Container>
   );

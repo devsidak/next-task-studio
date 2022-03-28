@@ -7,7 +7,7 @@ const main = (
   },
   action
 ) => {
-  console.log("payload - ", action.payload);
+  console.log("payload - ", action.type);
   switch (action.type) {
     case t.SET_NAME:
       return {

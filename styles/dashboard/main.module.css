@@ -24,6 +24,10 @@
 
 /* -------- SecondRow Styles -------- */
 
+.notasksContainer svg{
+    font-size:120px;
+}
+
 .secondRowContainer{
     /* display:flex;
     justify-content:space-between;
@@ -55,6 +59,7 @@
     display: flex;
     justify-content: center;
     margin : 0 auto;
+    max-width: 135px;
 }
 
 /* Fourth Row */

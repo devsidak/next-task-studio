@@ -72,6 +72,7 @@ input{
   font-weight: bold;
   text-transform: uppercase;
   margin: 0px;
+  text-align: center;
   background-color: transparent;
 }
 
@@ -89,3 +90,4 @@ input{
   background-color: #FFC148;
 }
 
+/* for highlighting active Link icon on leftsidebar */

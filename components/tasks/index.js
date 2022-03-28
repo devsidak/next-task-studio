@@ -7,6 +7,7 @@ import {
 } from "../../redux/actions/main";
 import Task from "./Task";
 import AssignmentLateIcon from "@mui/icons-material/AssignmentLate";
+import styles from '../../styles/dashboard/main.module.css';
 
 function Tasks() {
   const dispatch = useDispatch();
@@ -23,7 +24,7 @@ function Tasks() {
       console.log("syncing in tasks");
       dispatch(SyncFromLocalStorage());
     }
-  }, [dispatch, tasks]);
+  }, [dispatch, tasks.length]);
 
   const removeTodoHandler = (id) => {
     setLoading(true);
@@ -55,10 +56,8 @@ function Tasks() {
 
   const renderNotasksView = () => {
     return (
-      <div
-       
-      >
-        <AssignmentLateIcon className={"text-9xl text-slate-400 "} />
+      <div className={styles.notasksContainer}>
+        <AssignmentLateIcon className={"text-slate-400 "} />
         <h3 className={"text-center text-xl text-slate-400"}>
           No Tasks For Today
         </h3>
@@ -71,7 +70,7 @@ function Tasks() {
 
   return (
     <div>
-    {tasks.length !== 0 ? (
+      {tasks.length !== 0 ? (
         <ul>{renderTasks()}</ul>
       ) : (
         <>{renderNotasksView()}</>

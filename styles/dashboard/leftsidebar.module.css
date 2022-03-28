@@ -29,10 +29,27 @@
     padding: 40px 0px;
    
 
-}
+} 
 
 .listContainer div a{
     padding: 0px 13px;
 }
+
+.activeLink{
+    color :#3e98c7;
+
+ }
+
+ .activeLink path{
+    fill: #FFC148;
+    
+ }
+
+ .activeLink:hover{
+    color :#000;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+ }
+
 
 
