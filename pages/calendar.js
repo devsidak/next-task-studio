@@ -1,12 +1,11 @@
 import Centerbar from "../components/dashboard/centerGrid/Centerbar";
-import styles from '../styles/Home.module.css';
-import Container from '../components/index';
+import styles from "../styles/Home.module.css";
+import Container from "../components/index";
 import Calendar from "react-calendar";
 import { useState } from "react";
 
-
 function Index() {
-    const [value, onChange] = useState(new Date());
+  const [value, onChange] = useState(new Date());
 
   return (
     <Container>
@@ -16,11 +15,9 @@ function Index() {
         }
         onChange={onChange}
         value={value}
-      />    </Container>
- 
+      />
+    </Container>
   );
 }
 
 export default Index;
-
-
