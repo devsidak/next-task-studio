@@ -35,8 +35,14 @@ function SecondRow() {
           "flex justify-center items-center m-2 md:m-0 md:mr-3 p-5 rounded-xl"
         }
       >
-      <div className={"h-full max-w-fit flex-col text-center"}>
-          <div className={'border max-w-fit max-h-12 p-2 mt-2 rounded-xl border-yellow-500'}>
+        <div
+          className={"h-full max-w-fit flex-col justify-center  text-center"}
+        >
+          <div
+            className={
+              "border max-w-fit max-h-12 p-2 rounded-xl border-yellow-500"
+            }
+          >
             <TaskIcon className="text-yellow-500" />
           </div>
         </div>
@@ -66,8 +72,12 @@ function SecondRow() {
           "flex justify-center items-center m-2 mt-6 md:m-0 md:ml-3 p-5 rounded-xl"
         }
       >
-        <div className={"h-full max-w-fit flex-col text-center"}>
-          <div className={'border max-w-fit max-h-12 mt-2 p-2 rounded-xl border-yellow-500'}>
+        <div className={"h-full max-w-fit flex-col justify-center text-center"}>
+          <div
+            className={
+              "border max-w-fit max-h-12 p-2 rounded-xl border-yellow-500"
+            }
+          >
             <PendingActionsIcon className="text-yellow-500" />
           </div>
         </div>
