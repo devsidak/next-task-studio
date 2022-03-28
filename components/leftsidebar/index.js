@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import FormatListNumberedIcon from '@mui/icons-material/FormatListNumbered';
 import AddIcon from '@mui/icons-material/Add';
@@ -12,6 +12,11 @@ function Index() {
   const router = useRouter();
   const currentPath = router.route;
   console.log(currentPath)
+
+  useEffect(() => {
+    document.title = "Task Studio🔥  " + currentPath;
+  }, [currentPath]);
+
   return (
     <div  className={styles.container +  " flex-col "}>
       <div className={styles.logoContainer}>
