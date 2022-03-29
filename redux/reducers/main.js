@@ -1,5 +1,13 @@
-import * as t from "../types";
+/*
 
+  Reducer Functions For Performing State Updates In Redux State as per the action Types;
+
+Author - Gursidak Singh
+
+*/
+
+
+import * as t from "../types";
 const main = (
   state = {
     name: "guest",

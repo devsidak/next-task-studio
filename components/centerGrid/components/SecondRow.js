@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import styles from "../../../../styles/dashboard/main.module.css";
+import styles from "../../../styles/dashboard/main.module.css";
 
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
@@ -31,9 +31,7 @@ function SecondRow() {
           "flex justify-center items-center m-2 md:m-0 md:mr-3 p-5 rounded-xl"
         }
       >
-        <div
-          className={"h-full max-w-fit flex-col justify-center text-center"}
-        >
+        <div className={"h-full max-w-fit flex-col justify-center text-center"}>
           <div
             className={
               "border items-center max-w-fit m-2 max-h-13 p-3 rounded-xl border-yellow-500"

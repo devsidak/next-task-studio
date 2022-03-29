@@ -1,20 +1,19 @@
 import React from "react";
-import styles from "../../../../styles/dashboard/main.module.css";
+import styles from "../../../styles/dashboard/main.module.css";
 import { useRouter } from "next/router";
 
 function FirstRow() {
   const router = useRouter();
   const handleGreeting = () => {
     var today = new Date();
-    var curHr = today.getHours()
+    var curHr = today.getHours();
     if (curHr < 12 && curHr >= 6) {
       return "Good Morning 🌞";
     } else if (curHr < 17 && curHr >= 12) {
       return "Good Afternoon ☀️";
     } else if (curHr < 20 && curHr >= 17) {
       return "Good Evening 🌤";
-    }
-    else{
+    } else {
       return "Lights out ✨";
     }
   };
@@ -29,7 +28,10 @@ function FirstRow() {
           onClick={() => {
             router.push("/add");
           }}
-          className={styles.Button + " py-1 px-2 md:py-2 md:px-4 border-0 rounded-lg text-md "}
+          className={
+            styles.Button +
+            " py-1 px-2 md:py-2 md:px-4 border-0 rounded-lg text-md "
+          }
         >
           + Add Task
         </button>

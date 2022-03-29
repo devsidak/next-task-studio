@@ -1,5 +1,15 @@
+/*
+
+Action Creator Functions For Performing State Updates In Redux
+
+Author - Gursidak Singh
+
+*/
+
+
+
+
 import * as typ from "../types";
-import axios from "axios";
 import localforage from "localforage";
 
 export const setInfo = (usrName) => (dispatch) => {
@@ -124,39 +134,3 @@ export const SyncFromLocalStorage = () => (dispatch) => {
       console.log(err);
     });
 };
-
-// for firebase sync
-// export const syncTodos =  (todos) => async (dispatch) => {
-
-//   var todosList = [];
-//   try{
-//     const tasksCol = collection(db, "tasks");
-//     const tasksSnapshot = await getDocs(tasksCol);
-//     todosList = tasksSnapshot.docs.map((doc) => doc.data());
-//     todosList.sort(function (a, b) {
-//       return b.id - a.id;
-//      });
-//     console.log("from action - " , todosList)
-
-//     }catch(err){
-//       console.log("err - ", err);
-//     }
-
-//     dispatch({
-//       type: typ.SYNC_TODOS,
-//       payload: {
-//         todos: todosList,
-//       },
-//     });
-// }
-
-// For sync using getStaticProps from page;
-// export const updateState = (todos) => (dispatch) => {
-//   dispatch({
-//     type: typ.UPDATE_STATE,
-//     payload: {
-//       todos,
-//     },
-//   });
-
-// }
